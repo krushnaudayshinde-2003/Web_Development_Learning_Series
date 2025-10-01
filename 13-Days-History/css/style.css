@@ -1,0 +1,64 @@
+
+
+/* Adding A external font family */
+@font-face {
+    font-family: myFont;
+    src: url(./RemachineScript_Personal_Use.ttf);
+}
+/* CSS Boiler plate */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+ /* All CSS Properties used on Text */
+h1{
+    background-color: aqua;
+    color: black;
+    font-family:myFont;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 100px;
+
+}
+/* CSS properties for Div as Rectangle */
+#main{
+    height: 400px;
+    width: 400px;
+    background-color: crimson;
+    padding: 20px;
+    margin: 2px;
+}
+#inner{
+    height: 50%;/* get height 50% of parent */
+    width: 50%; /*get width 50% of parent , if given in pixel(px) irrespective of parent height and width can increase*/
+    background-color: aquamarine; 
+    
+
+}
+#Hero{
+    height: 200px;
+    width: 200px;
+    /* background: radial-gradient(red,crimson 10%,black 90%); */
+    /* background: linear-gradient(to right bottom ,Violet,gold,silver); */
+    background: conic-gradient(red,green,silver,Violet,gold,orange,red);
+
+}
+#Back{
+    height: 500px;
+    width: 500px;
+    background-color: azure;
+    background-image: url(https://images.unsplash.com/photo-1758547083647-e66dc420f28a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-size: cover; widthwise cover image */
+    background-size: contain;/*hightwise covers the image*/
+    background-repeat: no-repeat;
+    border: 2px solid crimson;
+    border-radius: 10%;
+    
+}
